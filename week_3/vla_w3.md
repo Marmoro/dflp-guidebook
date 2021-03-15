@@ -49,11 +49,11 @@ First we will create a GitHub account so we can create some repositories your ou
 
 Go to https://github.com/
 
-<img src="/Users/marwanalhemeiri/Desktop/Screen Shot 2021-03-10 at 9.27.10 AM.png" alt="Screen Shot 2021-03-10 at 9.27.10 AM" style="zoom:25%;" />
+<img src="./vla_w3_assets/s_0.png" style="zoom:25%;" />
 
 Click on **Sign up** and complete registration process.
 
-<img src="/Users/marwanalhemeiri/Desktop/Screen Shot 2021-03-10 at 9.27.17 AM.png" alt="Screen Shot 2021-03-10 at 9.27.17 AM" style="zoom:25%;" />
+<img src="./vla_w3_assets/s_1.png" style="zoom:25%;" />
 
 Once you have completed the registration, you should be able to create repositories under your account.
 
@@ -63,11 +63,12 @@ Once you have completed the registration, you should be able to create repositor
 
 After completing the registration process, from the top left, you should see New button. Click on it to see the repository creation form.
 
-<img src="/Users/marwanalhemeiri/Desktop/Screen Shot 2021-03-10 at 9.31.37 AM.png" alt="Screen Shot 2021-03-10 at 9.31.37 AM" style="zoom:50%;" />
+<img src="./vla_w3_assets/s_2.png" style="zoom:50%;" />
 
 This is what the page should look like.
 
-![Screen Shot 2021-03-10 at 9.33.04 AM](/Users/marwanalhemeiri/Desktop/Screen Shot 2021-03-10 at 9.33.04 AM.png)
+
+<img src="./vla_w3_assets/s_3.png" style="zoom:50%;" />
 
 give your repository a meaningful name, try using kebab-case style. For a quick reference into cases, look at the screenshot below:
 
@@ -78,14 +79,14 @@ Source: https://marketplace.visualstudio.com/items?itemName=maximus136.change-st
 
 Make sure you create an empty repository, meaning keeping these options unchecked.
 
-<img src="/Users/marwanalhemeiri/Desktop/Screen Shot 2021-03-10 at 9.39.16 AM.png" alt="Screen Shot 2021-03-10 at 9.39.16 AM" style="zoom:50%;" />
+<img src="./vla_w3_assets/s_5.png" alt="Screen Shot 2021-03-10 at 9.39.16 AM" style="zoom:50%;" />
 
 
 
 Now, you should see this page with information on how you can initialize this repository.
 
-![Screen Shot 2021-03-10 at 9.38.44 AM](/Users/marwanalhemeiri/Desktop/Screen Shot 2021-03-10 at 9.38.44 AM.png)
 
+<img src="./vla_w3_assets/s_4.png" alt="Screen Shot 2021-03-10 at 9.39.16 AM" style="zoom:50%;" />
 
 
 ##### Here is EXERCISE-01 : try to figure out how to push code to this repository 😎
@@ -147,7 +148,7 @@ sudo systemctl start mysql
 sudo systemctl enable mysql
 ```
 
-
+And that's it.
 
 ### Install Nginx
 
@@ -161,9 +162,7 @@ sudo systemctl start nginx
 sudo systemctl enable nginx
 ```
 
-
-
-We might have to configure UFW (Uncomplicated Firewall) program in Ubuntu, by running the following commands
+This should be enough. but we might have to configure UFW (Uncomplicated Firewall) program in Ubuntu, by running the following commands
 
 ```
 sudo ufw allow 80/tcp
@@ -207,11 +206,10 @@ https://strapi.io/
 
 
 
-**Here is EXERCISE-04 : try to figure out how to install strapi and create a simple CMS application 😎**
-
-
+**Here is EXERCISE-04 : try to figure out how to install strapi and create a simple CMS application 😎** 
 
 ### Final Exercise: Use Strapi with Angular
+
 
 https://strapi.io/documentation/developer-docs/latest/developer-resources/content-api/integrations/angular.html
 
