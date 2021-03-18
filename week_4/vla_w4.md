@@ -378,7 +378,7 @@ Time for some exercises.
 
 **EXERCISE-05 : Create a new component called landing-page 😎**
 
-**EXERCISE-06 : Create routing in app-routing.module.ts so that we have at least the following routes activated: **
+EXERCISE-06 : Create routing in app-routing.module.ts so that we have at least the following routes activated:
 
 * /home
 * /case/inquiry/create
