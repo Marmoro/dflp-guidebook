@@ -48,7 +48,7 @@ Properties:
 - caseType, enum(CaseType), required
 - caseStatus, enum(caseStatus), required
 - content, string, required
-- organization, number, required
+- organizationId, number, required
 - user, number, required
 
 #### Case Status Enum
@@ -82,7 +82,7 @@ Follow the steps below.
 # install nestJS CLI
 
 
-npm install -g @nestjs/cli
+sudo npm install -g @nestjs/cli
 
 # to scaffold a new nest app, enter the following command:
 nest new
