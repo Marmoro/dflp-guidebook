@@ -30,3 +30,102 @@ By the end of this activity you will learn the following:
 - Use the API explorer provided by Swagger
 - Use express session with redis to store user sessions
 - Setup user authentication and authorization
+
+
+### Notes
+
+#### Organization Entity
+Properties: 
+- id, number, ID Property auto-generated
+- companyName, string, required
+- companyLogo, string, required
+- active, boolean, required
+
+
+#### Case
+Properties: 
+- id, number, ID Property auto-generated
+- caseType, enum(CaseType), required
+- caseStatus, enum(caseStatus), required
+- content, string, required
+- organization, number, required
+- user, number, required
+
+#### Case Status Enum
+```typescript
+enum CaseStatus {
+  IN_PROGRESS = 'IN_PROGRESS',
+  ON_HOLD = 'ON_HOLD',
+  RESOLVED = 'RESOLVED',
+  CANCELED = 'CANCELED'
+}
+```
+
+#### Case Type Enum
+```typescript
+enum CaseType {
+  INQUIRY = 'INQUIRY',
+  COMPLAIN = 'COMPLAIN',
+  COMPLIMENT = 'COMPLIMENT'
+}
+```
+
+
+### Getting Started with NestJS
+
+Documentation here: https://docs.nestjs.com/cli/overview
+
+
+Follow the steps below.
+
+```bash
+# install nestJS CLI
+
+
+npm install -g @nestjs/cli
+
+# to scaffold a new nest app, enter the following command:
+nest new
+
+# it will ask you to name the project. call it:
+crmforpeople-app
+
+# it will ask which package manager to use. Select NPM
+npm
+
+
+# You can now change the directory and start the app
+
+
+# change directory
+cd crmforpeople-app
+
+# start the app
+npm run start
+
+
+# install required packages
+# https://docs.nestjs.com/techniques/database
+# https://docs.nestjs.com/openapi/introduction
+
+npm i --save @nestjs/typeorm typeorm mysql2
+npm i class-transformer class-validator
+npm i redis express-session connect-redis
+npm i -D @types/express-session
+
+# create case resource
+nest g resource case
+
+# ? What transport layer do you use? REST API
+# ? Would you like to generate CRUD entry points? Yes
+
+# create organization resource
+nest g resource organization
+
+# ? What transport layer do you use? REST API
+# ? Would you like to generate CRUD entry points? Yes
+
+# create user resource
+nest g resource user
+
+```
