@@ -42,3 +42,11 @@ We are giving you a fast-track by showing you how to building something useful w
 - Create One-Time Password authentication for users
 - Fix bugs that exists in the exercise files 👾
 - Create a build of the application using npm
+
+
+And install the following packages
+
+```bash
+npm i argon2 passport passport-local
+npm i @types/argon2 @types/passport @types/passport-local --save-dev
+```
