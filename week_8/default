@@ -1,0 +1,15 @@
+server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+
+        location / {
+            proxy_pass http://localhost:8080;
+            index index.html;
+        }
+
+location /api {
+            proxy_pass http://localhost:3000;
+            index index.html;
+        }
+
+}
