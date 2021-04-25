@@ -51,12 +51,12 @@ $ sudo service apache2 stop
 
 Before creating virtual hosts, we need to change which port apache2 is listening to.
 
-Let's edit this file (Ports Configuration) to match the exercise file here:
+Let's edit this file (Ports Configuration) to match the exercise file here: https://github.com/Marmoro/dflp-guidebook/blob/master/week_8/ports.conf
 ```bash
 $ sudo nano /etc/apache2/ports.conf
 ```
 
-Let's edit this file (Virtual Hosts Configuration) to match the exercise file here:
+Let's edit this file (Virtual Hosts Configuration) to match the exercise file here: https://github.com/Marmoro/dflp-guidebook/blob/master/week_8/000-default.conf
 ```bash
 $ sudo nano /etc/apache2/sites-enabled/000-default.conf
 ```
@@ -68,7 +68,7 @@ $ sudo service apache2 start
 
 #### Configure Nginx for reverse proxy
 
-Let's edit this file to match the exercise file here:
+Let's edit this file to match the exercise file here: https://github.com/Marmoro/dflp-guidebook/blob/master/week_8/default
 ```bash
 $ sudo nano /etc/nginx/sites-enabled/default
 ```
